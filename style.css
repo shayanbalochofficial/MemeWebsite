@@ -3,13 +3,18 @@
   padding: 0;
 }
 body {
-  min-height: 100vh;
-  background: #21c2df;
+  background: #96ebfa;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+header {
+  border-bottom: 1px solid #03aeccd2;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
 nav {
-  background: #fff;
+  background: #96ebfa;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -83,4 +88,70 @@ nav li:first-child {
   .sidebar {
     width: 100%;
   }
+}
+
+main {
+  width: 95%;
+  max-width: 1300px;
+  margin: auto;
+  text-align: center;
+}
+
+.main h1 {
+  text-align: center;
+  margin: 30px 0;
+  height: 20vh;
+  background: #a3e7f3;
+  padding-top: 50px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  justify-content: center;
+  gap: 35px;
+}
+
+.card {
+  display: block;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  transition: 0.25s ease;
+  -webkit-transition: 0.25s ease;
+  -moz-transition: 0.25s ease;
+  -ms-transition: 0.25s ease;
+  -o-transition: 0.25s ease;
+}
+.card img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallery a {
+  border: 6px solid black;
+}
+
+.landing {
+  width: 90%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.landing img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.landing h2 {
+  margin-top: 10px;
 }
