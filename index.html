@@ -5,20 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meeeemez - Your Go to Place for Memez</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close,menu"
+    />
   </head>
   <body>
     <header>
       <nav>
-        <!-- <li><a href="/index.html">Meeeemez</a></li> -->
-        <ul>
+        <ul class="sidebar">
+          <li onclick="hideSidebar()">
+            <a href="#"
+              ><span class="material-symbols-outlined">
+                close
+              </span></a
+            >
+          </li>
           <li><a href="">Collection</a></li>
           <li><a href="">About Me</a></li>
           <li><a href="">Contact Us</a></li>
           <li><a href="">Upload Meme</a></li>
         </ul>
+        <ul>
+          <li><a href="/index.html">Meeeemez</a></li>
+          <li class="hideOnMobile"><a href="">Collection</a></li>
+          <li class="hideOnMobile"><a href="">About Me</a></li>
+          <li class="hideOnMobile"><a href="">Contact Us</a></li>
+          <li class="hideOnMobile"><a href="">Upload Meme</a></li>
+          <li onclick="showSidebar()" class="menu-button">
+            <a href="# "
+              ><span class="material-symbols-outlined">
+                menu
+              </span></a
+            >
+          </li>
+        </ul>
       </nav>
     </header>
     <main></main>
     <footer></footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
