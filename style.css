@@ -299,3 +299,38 @@ form button:hover {
     grid-template-columns: 1fr;
   }
 }
+
+.footer-container {
+  background-color: #000;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 100px;
+}
+
+.footer-col ul {
+  list-style-type: none;
+}
+
+.footer-col h4 {
+  color: white;
+  margin-bottom: 25px;
+  font-size: 22px;
+  position: relative;
+  font-family: sans-serif;
+}
+
+.footer-col h4::before {
+  content: "";
+  width: 70px;
+  height: 2px;
+  position: absolute;
+  background-color: #016964;
+  bottom: -10px;
+}
+
+.footer-col ul li a{
+  
+}
