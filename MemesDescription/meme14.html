@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Description</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      .page {
+        width: 90%;
+        max-width: 1200px;
+        margin: 50px auto;
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+      }
+
+      .img {
+        flex: 1;
+        background: rgba(16, 199, 231, 0.521);
+        border: 3px solid black;
+        border-radius: 15px;
+      }
+
+      .img img {
+        width: 100%;
+        background: rgba(16, 199, 231, 0.521);
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      .desc {
+        flex: 1.5;
+        background: rgba(173, 231, 241, 0.596);
+        border: 3px solid black;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      }
+
+      .desc h1 {
+        margin-bottom: 20px;
+      }
+
+      .desc h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      .desc p {
+        line-height: 1.8;
+        color: #444;
+      }
+
+      .btn {
+        display: inline-block;
+        background: rgba(173, 231, 241, 0.596);
+        border: 1px solid black;
+        color: rgb(4, 4, 5);
+        text-decoration: none;
+        padding: 8px;
+        margin: 8px;
+        transition: 0.3s;
+      }
+
+      .back-btn:hover {
+        background: #0078cc;
+      }
+
+      @media (max-width: 768px) {
+        main.page {
+          flex-direction: column;
+        }
+
+        .desc {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="sidebar">
+          <li onclick="hideSidebar()">
+            <a href="#"
+              ><span class="material-symbols-outlined">
+                close
+              </span></a
+            >
+          </li>
+          <li><a href="">Collection</a></li>
+          <li><a href="">About Me</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Upload Meme</a></li>
+        </ul>
+        <ul>
+          <li><a href="/index.html">Meeeemez</a></li>
+          <li class="hideOnMobile"><a href="">Collection</a></li>
+          <li class="hideOnMobile"><a href="">About Me</a></li>
+          <li class="hideOnMobile"><a href="">Contact Us</a></li>
+          <li class="hideOnMobile"><a href="">Upload Meme</a></li>
+          <li onclick="showSidebar()" class="menu-button">
+            <a href="# "
+              ><span class="material-symbols-outlined">
+                menu
+              </span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page">
+      <div class="img">
+        <img src="../Assets/meme14.png" alt="Meme" />
+      </div>
+
+      <div class="desc">
+        <h3>Context</h3>
+
+        <p>
+          ....Coming Soon
+        </p>
+
+        <a href="../index.html" class="btn">← Back to Memes</a>
+      </div>
+    </main>
+  </body>
+</html>
