@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeeemez - Your Go to Place for Memez</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close,menu"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="sidebar">
+          <li onclick="hideSidebar()">
+            <a href="#"
+              ><span class="material-symbols-outlined">
+                close
+              </span></a
+            >
+          </li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+        <ul>
+          <li><a href="../index.html">Meeeemez</a></li>
+          <li class="hideOnMobile"><a href="#">Upload Meme</a></li>
+          <li onclick="showSidebar()" class="menu-button">
+            <a href="# "
+              ><span class="material-symbols-outlined">
+                menu
+              </span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="contact">
+        <div class="container">
+          <h2 style="text-decoration: underline;">
+            We'd love to add your meme to our Collection
+          </h2>
+          <div class="contact-wrapper">
+            <div class="contact-form">
+              <h3>Send Us Your Meme</h3>
+              <form action="">
+                <div class="form-group">
+                  <input type="text" name="name" placeholder="Your Name" />
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" placeholder="Your Email" />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    type="message"
+                    placeholder="Enter Message..."
+                  ></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+              </form>
+            </div>
+            <div class="contact-info">
+              <h3>Contact Info</h3>
+              <p>Phone: 021 456 789 1001</p>
+              <p>Email: info@meeeemez.com</p>
+              <p>Address: 123 Street, City, Country</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class=""></div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
