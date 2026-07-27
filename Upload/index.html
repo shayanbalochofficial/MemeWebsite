@@ -45,24 +45,53 @@
           <div class="contact-wrapper">
             <div class="contact-form">
               <h3>Send Us Your Meme</h3>
-              <form action="">
+              <form
+                id="uploadForm"
+                action=""
+                method="post"
+                enctype="multipart/form-data"
+              >
                 <div class="form-group">
-                  <input type="text" name="name" placeholder="Your Name" />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
                 </div>
+
                 <div class="form-group">
-                  <input type="email" name="email" placeholder="Your Email" />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                  />
                 </div>
+
+                <div class="form-group">
+                  <label for="meme">Meme here</label>
+                  <input
+                    type="file"
+                    id="meme"
+                    name="meme"
+                    accept="image/*"
+                    required
+                  />
+                </div>
+
                 <div class="form-group">
                   <textarea
-                    type="message"
-                    placeholder="Enter Message..."
+                    name="description"
+                    placeholder="Tell us about your meme..."
                   ></textarea>
                 </div>
-                <button type="submit">Send Message</button>
+
+                <button type="submit">Upload Meme</button>
               </form>
             </div>
             <div class="contact-info">
-              <h3>Contact Info</h3>
+              <h3>Contact Info - Send us via mail</h3>
               <p>Phone: 021 456 789 1001</p>
               <p>Email: info@meeeemez.com</p>
               <p>Address: 123 Street, City, Country</p>

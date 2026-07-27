@@ -115,17 +115,28 @@
           <div class="contact-wrapper">
             <div class="contact-form">
               <h3>Send Us a Message</h3>
-              <form action="">
+              <form action="" id="contactForm">
                 <div class="form-group">
-                  <input type="text" name="name" placeholder="Your Name" />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
                 </div>
                 <div class="form-group">
-                  <input type="email" name="email" placeholder="Your Email" />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                  />
                 </div>
                 <div class="form-group">
                   <textarea
                     type="message"
                     placeholder="Enter Message..."
+                    required
                   ></textarea>
                 </div>
                 <button type="submit">Send Message</button>
@@ -147,37 +158,37 @@
           <div class="footer-col">
             <h4>Meeeemez</h4>
             <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">Trending</a></li>
-              <li><a href="">MemeBase</a></li>
-              <li><a href="">Comedy</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Trending</a></li>
+              <li><a href="#">MemeBase</a></li>
+              <li><a href="#">Comedy</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>Links</h4>
             <ul>
-              <li><a href="">Our Team</a></li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">Policy</a></li>
-              <li><a href="">Licenses</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Policy</a></li>
+              <li><a href="#">Licenses</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>Third Party Resources</h4>
             <ul>
-              <li><a href="">Our Team</a></li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">Policy</a></li>
-              <li><a href="">Licenses</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Policy</a></li>
+              <li><a href="#">Licenses</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>Drop Us a Message! It's FREE</h4>
-            <form action="">
+            <!-- <form action="">
               <input type="text" placeholder="Your Name" class="inputName" />
               <input type="email" placeholder="Your Email" class="inputEmail" />
               <input type="submit" value="Submit" class="inputSubmit" />
-            </form>
+            </form> -->
           </div>
         </div>
         <hr />
@@ -191,5 +202,16 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          alert("Your message has been sent successfully!");
+
+          this.reset();
+        });
+    </script>
   </body>
 </html>
