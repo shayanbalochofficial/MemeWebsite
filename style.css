@@ -331,6 +331,57 @@ form button:hover {
   bottom: -10px;
 }
 
-.footer-col ul li a{
-  
+.footer-col ul li {
+  padding: 10px 0;
+}
+
+.footer-col ul li a {
+  color: #01f1e5;
+  text-decoration: none;
+  font-size: 16px;
+  opacity: 0.7;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.footer-col ul li a:hover {
+  opacity: 1;
+}
+
+.footer-col input {
+  border: none;
+  width: 250px;
+  height: 45px;
+  display: block;
+  padding-left: 20px;
+  margin: 14px 0;
+}
+
+.footer-col .inputSubmit {
+  padding: 0px 20px;
+  background-color: #016964;
+  border: none;
+  color: #fff;
+}
+
+.footer-col p {
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  footer .footer-row {
+    flex-direction: column;
+    padding: 20px 30px;
+  }
+
+  footer .footer-col ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .footer-col input {
+    width: 100%;
+  }
 }
